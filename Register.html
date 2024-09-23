@@ -1,0 +1,89 @@
+<script src="js/jquery/3.2.1/jquery-3.2.1.min.js"></script>
+<link href="style/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Page</title>
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="style/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="style/fontawesome/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="style/Login.css">
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>REGISTRO DE USUARIO</h3>
+			</div>
+			<div id="formRegister" class="card-body d-none">
+				<form id="signUp">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input id="usernameSingUp" type="text" class="form-control" placeholder="Usuario">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input id="passwordSingUp" type="password" class="form-control" placeholder="contrase&ntilde;a">
+					</div>
+					<div class="form-group">
+						<div id="alertError" class="d-none text-danger"></div>
+						<input id='signUpButton' type="submit" value="SingUp" class="btn float-right singUp_btn">
+					</div>
+				</form>
+			</div>
+
+			<div id="formRegisterAdmin" class="card-body d-none">
+				<form id="signUpAdmin">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input id="usernameAdmin" type="text" class="form-control" placeholder="Usuario">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input id="passwordAdmin" type="password" class="form-control" placeholder="Contrase&ntilde;a">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input id="roleAdmin" type="text" class="form-control" placeholder="Administrador" readonly>
+					</div>
+					<div class="form-group">
+						<div id="alertErrorAdmin" class="d-none text-danger"></div>
+						<input id='adminButton' type="submit" value="SingUp" class="btn float-right singUp_btn">
+					</div>
+				</form>
+			</div>
+
+			<div id="formSuccess" class="card-body d-none">
+				<div class="d-flex justify-content-center links">
+					Usuario creado con exito <a href="index.html">Volver al inicio</a>
+				</div>
+			</div>
+			<div id="footerRegister" class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Inicia Sesion si ya tienes cuenta <a href="index.html">Iniciar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/Register.js"></script>
+	</body>
+</html>
